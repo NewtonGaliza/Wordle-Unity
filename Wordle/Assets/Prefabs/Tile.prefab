@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5062248083137110646}
   - component: {fileID: 6890587706661127572}
   - component: {fileID: 4971542729238387768}
+  - component: {fileID: 1175543190662875396}
   m_Layer: 5
   m_Name: Tile
   m_TagString: Untagged
@@ -92,6 +93,18 @@ MonoBehaviour:
   m_EffectColor: {r: 0.22745098, g: 0.22745098, b: 0.23529412, a: 1}
   m_EffectDistance: {x: 3, y: 3}
   m_UseGraphicAlpha: 1
+--- !u!114 &1175543190662875396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127339442418817320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5d2378697868f449b5317c87a3fee8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4017411316493535374
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,7 +170,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: b
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 835c1830382985f4e805762d61e9758a, type: 2}
   m_sharedMaterial: {fileID: 3348018843024653823, guid: 835c1830382985f4e805762d61e9758a, type: 2}
