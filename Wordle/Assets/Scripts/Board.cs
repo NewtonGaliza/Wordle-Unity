@@ -80,7 +80,31 @@ public class Board : MonoBehaviour
 
     private void SubmitRow(Row row)
     {
+        for(int i=0;i < row.tiles.Length;i++)
+        {
+            Tile tile = row.tiles[i];
+            
+            if(tile.letter == word[i])
+            {
 
+            }
+            else if(word.Contains(tile.letter)) //letter in wrong spot
+            {
+
+            }
+            else //complete incorrect
+            {
+
+            }
+        }
+
+        rowIndex++;
+        columnIndex = 0;
+
+        if(rowIndex >= rows.Length)
+        {
+            enabled = false;
+        }
     }
 
 }
