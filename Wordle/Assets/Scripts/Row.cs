@@ -10,7 +10,7 @@ public class Row : MonoBehaviour
     {
         get 
         {
-            string word = " ";
+            string word = "";
 
             for(int i = 0;i < tiles.Length;i++)
             {
