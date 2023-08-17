@@ -16,6 +16,7 @@ public class Board : MonoBehaviour
 
     private string[] solutions;
     private string[] validWords;
+    private string word;
 
     private int rowIndex;
     private int columnIndex;
@@ -27,7 +28,8 @@ public class Board : MonoBehaviour
 
     private void Start()
     {
-        LoadData();     
+        LoadData(); 
+        SetRandomWord();    
     }
 
     private void LoadData()
@@ -37,6 +39,12 @@ public class Board : MonoBehaviour
 
         textFile = Resources.Load("official_wordle_common") as TextAsset;
         solutions = textFile.text.Split("\n") ;
+    }
+
+    private void SetRandomWord()
+    {
+        word = solutions[Random.Range(0, solutions.Length)];
+        word = word.ToLower().Trim();
     }
 
     // Update is called once per frame
